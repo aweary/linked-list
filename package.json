@@ -1,0 +1,8 @@
+{
+  "name": "@aweary/linked-list",
+  "version": "0.0.1",
+  "description": "Single and doubly linked lists",
+  "main": "index.js",
+  "author": "Brandon Dail",
+  "license": "MIT"
+}
