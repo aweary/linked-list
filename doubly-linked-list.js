@@ -81,10 +81,6 @@ class DoublyLinkedList {
   }
 
   search(item) {
-    /**
-     * We maintain pointers to the first and last item,
-     * which means we do search in n/2 time
-     */
     let head = this.first
     let tail = this.last
     /**
