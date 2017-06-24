@@ -81,26 +81,11 @@ class DoublyLinkedList {
   }
 
   search(item) {
-    let head = this.first
-    let tail = this.last
-    /**
-     * Traverse the list from both ends until either:
-     * 1. The head pointer contains the data
-     * 2. The tail pointer contains the data
-     * 3. The head and tail are equal, meaining that
-     *    we've traversed the whole list
-     */
-    while (head.data !== item && tail.data !== item && head !== tail) {
-      head = head.next
-      tail = tail.prev
+    let pointer = this.first
+    while (pointer !== null && pointer.data !== item) {
+      pointer = pointer.next
     }
-    if (head.data === item) {
-      return head
-    }
-    if (tail.data === item) {
-      return tail
-    }
-    return null
+    return pointer
   }
 }
 
