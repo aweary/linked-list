@@ -4,5 +4,11 @@
   "description": "Single and doubly linked lists",
   "main": "index.js",
   "author": "Brandon Dail",
-  "license": "MIT"
+  "license": "MIT",
+  "scripts": {
+    "test": "jest"
+  },
+  "devDependencies": {
+    "jest": "^20.0.4"
+  }
 }
